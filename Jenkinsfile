@@ -8,8 +8,7 @@ pipeline {
         sh '''
  export IMAGE_TAG=$(git rev-parse HEAD)'''
         sh ' export DOCKER_CONFIG=/kaniko/.docker'
-        sh '''docker build -t "$IMAGE_ID:$IMAGE_TAG"
-"."'''
+        sh 'docker build -t vishalpandita/sita "."'
         sh 'docker push'
       }
     }
