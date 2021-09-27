@@ -2,7 +2,12 @@ pipeline {
   agent any
   stages {
     stage('build') {
-      agent any
+      agent {
+        node {
+          label 'docker'
+        }
+
+      }
       steps {
         sh 'export IMAGE_ID=vishalpandita/sita '
         sh '''
