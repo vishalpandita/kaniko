@@ -11,6 +11,7 @@ pipeline {
       steps {
         sh 'echo "Hello World"'
         sh 'ls -ltr'
+        sh 'cat /kaniko/.docker/config.json'
       }
     }
 
