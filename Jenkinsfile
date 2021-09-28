@@ -11,7 +11,6 @@ pipeline {
       steps {
         sh 'echo "Hello World"'
         sh 'ls -ltr'
-        sh 'mvn'
         sh 'pwd'
       }
     }
