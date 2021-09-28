@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       agent {
         node {
-          label 'maven'
+          label 'slave'
         }
 
       }
