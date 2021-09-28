@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       agent {
         node {
-          label 'slave'
+          label 'maven'
         }
 
       }
@@ -12,6 +12,7 @@ pipeline {
         sh 'echo "Hello World"'
         sh 'ls -ltr'
         sh 'mvn'
+        sh 'pwd'
       }
     }
 
