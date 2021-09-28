@@ -12,6 +12,8 @@ pipeline {
         sh 'echo "Hello World"'
         sh 'ls -ltr'
         sh 'pwd'
+        sh '''echo "it will make to next branch"
+'''
       }
     }
 
